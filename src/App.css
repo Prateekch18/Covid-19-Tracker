@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sriracha&display=swap');
+
+*{
+  margin: 0;
+}
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fbfcff;
+  padding: 20px;
+}
+
+body {
+  background-color: #55565c;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__header > h1 {
+  color: rgb(134, 154, 184);
+  font-size: 2rem;
+  font-family: 'Sriracha', cursive;
+}
+
+.app__dropdown {
+  background-color: lightgrey;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Sriracha', cursive;
+}
+.app__Info > h3{
+  /* font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem; */
+  font-family: 'Sriracha', cursive;
+}
+.app__right{
+  flex: 0.1;
+  margin-left: 20px;
+}
+.graph{
+  border: 3px solid;
+  padding: 10px;
+}
+.graph > h3{
+  color: lightslategray;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+    
+  }
+  .app__right{
+    flex-direction: column;
+    /* flex: 0.3; */
+    margin-top: 15px;
+  }
+}
